@@ -197,6 +197,9 @@ nav {
   letter-spacing: 0.02em;
   max-width: 264px;
 }
+.footer-socials-container {
+  margin-right: 80px;
+}
 .footer-socials-title {
   color: var(--white, #fff);
   font-weight: 500;
@@ -228,6 +231,61 @@ nav {
   background-color: var(--success);
 }
 
+.footer-form-container {
+  display: flex;
+}
+.footer-form-header {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white-backgound);
+  font-weight: 500;
+}
+.footer-form {
+  display: flex;
+  gap: 24px;
+}
+.footer-form-input {
+  width: 264px;
+  height: 40px;
+  padding: 8px 16px;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid var(--white-backgound);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  outline: transparent;
+
+  color: var(--white-backgound);
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-form-input::placeholder {
+  color: var(--white-backgound);
+}
+.footer-form-input:hover,
+.footer-form-input:focus {
+  border: 1px solid var(--primary-brand);
+}
+.footer-form-button {
+  display: inline-flex;
+  gap: 16px;
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background: var(--primary-brand);
+  border: none;
+
+  color: var(--white-backgound);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04px;
+}
+.footer-button-icon {
+  fill: currentColor;
+}
 /* Main */
 
 /* Hero */
@@ -306,6 +364,7 @@ nav {
   position: absolute;
   width: 408px;
   min-height: 584px;
+  padding: 24px;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
@@ -343,6 +402,120 @@ nav {
   background-color: var(--pressed-state);
   border: none;
   fill: var(--white-backgound);
+}
+.modal-caption {
+  display: block;
+  width: 360px;
+  color: var(--dark);
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+.modal-form {
+}
+.modal-form-label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+}
+.modal-form-field {
+  position: relative;
+  margin-bottom: 8px;
+}
+.modal-form-input {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid var(--modal-overlay);
+  padding: 8px 16px;
+  padding-left: 38px;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-form-input:focus {
+  border-color: var(--primary-brand);
+}
+.modal-input-icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateX(16px) translateY(-50%);
+  fill: var(--dark);
+  pointer-events: none;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-form-input:focus + .modal-input-icon {
+  fill: var(--primary-brand);
+}
+.modal-form-comment {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid var(--modal-overlay);
+  outline: transparent;
+  resize: none;
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  color: var(--modal-overlay);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+}
+.modal-form-comment:focus {
+  border-color: var(--primary-brand);
+}
+
+.modal-form-agreement {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+}
+.modal-agreement-checkbox {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  border-width: 1px;
+
+  border: var(--modal-overlay);
+  color: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-checkbox-icon {
+  fill: currentColor;
+}
+.modal-form-link {
+  color: var(--primary-brand);
+}
+.input[type='checkbox']:checked + .modal-agreement-checkbox {
+  background-color: var(--pressed-state);
+  border-color: var(--pressed-state);
+  color: var(--light);
+}
+
+.modal-send-button {
+  width: 170px;
+  border-radius: 4px;
+  border: none;
+  background: var(--primary-brand);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+  color: var(--white-backgound);
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding: 16px 32px;
+  margin-top: 24px;
 }
 /* Section 1 - Benefits */
 
