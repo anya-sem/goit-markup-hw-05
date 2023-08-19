@@ -239,6 +239,7 @@ nav {
   letter-spacing: 0.02em;
   color: var(--white-backgound);
   font-weight: 500;
+  margin-bottom: 16px;
 }
 .footer-form {
   display: flex;
@@ -247,7 +248,7 @@ nav {
 .footer-form-input {
   width: 264px;
   height: 40px;
-  padding: 8px 16px;
+  padding-left: 16px;
   background-color: transparent;
   border-radius: 4px;
   border: 1px solid var(--white-backgound);
@@ -270,6 +271,7 @@ nav {
 }
 .footer-form-button {
   display: inline-flex;
+  min-width: 165px;
   gap: 16px;
   padding: 8px 24px;
   justify-content: center;
@@ -277,14 +279,16 @@ nav {
   border-radius: 4px;
   background: var(--primary-brand);
   border: none;
+  cursor: pointer;
 
   color: var(--white-backgound);
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.04px;
+  letter-spacing: 0.04em;
 }
 .footer-button-icon {
   fill: currentColor;
+  margin-left: 16px;
 }
 /* Main */
 
@@ -364,7 +368,7 @@ nav {
   position: absolute;
   width: 408px;
   min-height: 584px;
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
@@ -415,6 +419,9 @@ nav {
 }
 .modal-form {
 }
+.modal-form-input-wrapper {
+  margin-bottom: 8px;
+}
 .modal-form-label {
   display: block;
   margin-bottom: 4px;
@@ -424,7 +431,6 @@ nav {
 }
 .modal-form-field {
   position: relative;
-  margin-bottom: 8px;
 }
 .modal-form-input {
   width: 100%;
@@ -450,6 +456,9 @@ nav {
 .modal-form-input:focus + .modal-input-icon {
   fill: var(--primary-brand);
 }
+.modal-form-comment-wrapper {
+  margin-bottom: 16px;
+}
 .modal-form-comment {
   width: 100%;
   border-radius: 4px;
@@ -457,7 +466,6 @@ nav {
   outline: transparent;
   resize: none;
   padding: 8px 16px;
-  margin-bottom: 16px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   color: var(--modal-overlay);
@@ -503,7 +511,10 @@ nav {
 }
 
 .modal-send-button {
-  width: 170px;
+  display: block;
+  margin: 0 auto;
+  min-width: 169px;
+  height: 56px;
   border-radius: 4px;
   border: none;
   background: var(--primary-brand);
@@ -511,11 +522,19 @@ nav {
 
   color: var(--white-backgound);
   text-align: center;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  cursor: pointer;
   padding: 16px 32px;
   margin-top: 24px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-send-button:hover,
+.modal-send-button:focus {
+  background-color: var(--pressed-state);
 }
 /* Section 1 - Benefits */
 
