@@ -488,13 +488,15 @@
         <div class="footer-form-container">
           <p class="footer-form-header">Subscribe</p>
           <form class="footer-form">
-            <label for="footer-form-label"></label>
-            <input
-              class="footer-form-input"
-              type="email"
-              name="subscribe-email"
-              placeholder="E-mail"
-            />
+            <label class="footer-form-label" for="subscribe-email">
+              <input
+                class="footer-form-input"
+                type="email"
+                name="subscribe-email"
+                placeholder="E-mail"
+              />
+            </label>
+
             <button class="footer-form-button" type="submit">
               Subscribe
               <svg class="footer-button-icon" width="24" height="24">
@@ -577,28 +579,27 @@
             ></textarea>
           </div>
 
-          <div>
+          <div class="modal-form-agreement-wrapper">
+            <input
+              class="modal-form-agreement-input visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
+            />
             <label class="modal-form-agreement" for="user-privacy">
-              <input
-                class="visually-hidden"
-                type="checkbox"
-                name="user-privacy"
-                id="user-privacy"
-              />
               <span class="modal-agreement-checkbox">
                 <svg class="modal-checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-checkbox"></use>
                 </svg>
               </span>
-              <span class="modal-form-desc"
-                >I accept the terms and conditions of the
-                <a
-                  class="modal-form-link"
-                  href=""
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  >Privacy Policy</a
-                ></span
+              I accept the terms and conditions of the
+              <a
+                class="modal-form-link"
+                href=""
+                target="_blank"
+                rel="noreferrer noopener"
+                >Privacy Policy</a
               >
             </label>
           </div>
