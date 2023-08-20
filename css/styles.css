@@ -232,7 +232,7 @@ nav {
 }
 
 .footer-form-container {
-  display: flex;
+  display: block;
 }
 .footer-form-header {
   line-height: 1.5;
@@ -257,7 +257,7 @@ nav {
 
   color: var(--white-backgound);
   font-size: 12px;
-  line-height: 2;
+  line-height: 1.5;
   letter-spacing: 0.04em;
 
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -511,21 +511,21 @@ nav {
   border-width: 1px;
 
   fill: transparent;
-  border: var(--modal-overlay);
+  border: 1px solid var(--modal-overlay);
+  border-radius: 2px;
   color: transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal-checkbox-icon {
-  fill: currentColor;
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-link {
   color: var(--primary-brand);
 }
-.input[type='checkbox']:checked + .modal-agreement-checkbox {
+.modal-form-agreement-input:checked
+  + .modal-form-agreement
+  > .modal-agreement-checkbox {
   background-color: var(--pressed-state);
-  border-color: var(--pressed-state);
+  border: none;
   fill: var(--light);
 }
 
